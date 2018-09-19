@@ -6,7 +6,10 @@ jobs:
     steps:
       - checkout: self
         clean: true
-      - script: ls
+      - script: ./run.sh
+        env:
+          BOTTOKEN: $(bottoken)
+
       #- task: PublishBuildArtifacts@1
       #  displayName: Publish packages
       #  inputs:
