@@ -1,0 +1,8 @@
+image:
+  - ubuntu
+environment:
+  matrix:
+    - APPVEYOR_SSH_BLOCK: true
+
+build_script:
+  - ./appveyor.sh
